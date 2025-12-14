@@ -111,10 +111,9 @@ button {
 
 /* ---------- Notes Container ---------- */
 .notes__container {
-  display: grid;
-  gap: 1.5rem;
+  column-count: 1;
+  column-gap: 1.5rem;
   padding-block: 2rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
   position: relative;
   /* min-height: 70vh; */
 }
@@ -132,6 +131,9 @@ button {
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  display: inline-block;
 }
 
 .input__box {
